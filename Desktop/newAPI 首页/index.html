@@ -1,7 +1,7 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Nebula • Distributed AI Cloud Interface</title>
+    <title>源头大模型API供应商 • DeepSeek Claude Gemini</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -30,23 +30,25 @@
         <div class="mx-auto max-w-3xl text-center">
           <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-[14px] w-[14px] text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4"></path><path d="M12 18v4"></path><path d="m4.93 4.93 2.83 2.83"></path><path d="m16.24 16.24 2.83 2.83"></path><path d="M2 12h4"></path><path d="M18 12h4"></path><path d="m4.93 19.07 2.83-2.83"></path><path d="m16.24 7.76 2.83-2.83"></path></svg>
-            Live across 200+ edge locations
+            本站充值比例1:1，充值请添加vx：RaiseToTop
           </span>
           <h1 class="mt-5 text-4xl leading-tight tracking-tight sm:text-5xl lg:text-6xl">
-            Distributed AI Cloud Interface
+            源头大模型API供应商
           </h1>
+          <h2 class="mt-3 text-2xl sm:text-3xl text-white/90">
+            DeepSeek、Claude、Gemini等全模型
+          </h2>
           <p class="mx-auto mt-5 max-w-2xl text-base text-white/70">
-            Scale intelligent workloads on a quantum-grade mesh with zero‑trust security and global, low‑latency execution.
+            我们与 OpenAI 提供的 API 完全兼容，这简化了迁移过程。例如，如果您目前正在使用 OpenAI Python SDK，只需将base_url更改为https://www.marsxplus.com/v1，并在我们平台创建 API 密钥，即可开始使用 AI大模型API。
           </p>
 
           <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <a href="#" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white/90 transition hover:border-violet-400 hover:text-violet-300">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-[16px] w-[16px] text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
-              Launch Console
+            <a href="#" class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-violet-600 hover:bg-violet-700 px-5 py-2.5 text-sm font-medium text-white transition">
+              QQ群：259500941
             </a>
             <a href="#" class="inline-flex items-center gap-2 rounded-full border border-white/10 px-5 py-2.5 text-sm font-medium text-white/80 transition hover:border-violet-400 hover:text-violet-300">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-[16px] w-[16px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="m9 18 6-6-6-6"></path></svg>
-              Request Access
+              开始使用
             </a>
           </div>
         </div>
@@ -57,22 +59,28 @@
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2 text-sm text-white/80">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-[16px] w-[16px] text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M4 5h16"></path><path d="M4 9h16"></path><path d="M4 15h16"></path><path d="M4 19h16"></path></svg>
-                Quick start
+                Python SDK 示例
               </div>
-              <span class="text-xs text-white/50">CLI</span>
+              <span class="text-xs text-white/50">Python</span>
             </div>
             <div class="mt-4 overflow-hidden rounded-lg border border-white/10 bg-black/60">
               <div class="flex items-center gap-2 border-b border-white/10 px-3 py-2 text-[11px] text-white/60">
                 <span class="h-2 w-2 rounded-full bg-rose-400/90"></span>
                 <span class="h-2 w-2 rounded-full bg-amber-400/90"></span>
                 <span class="h-2 w-2 rounded-full bg-emerald-400/90"></span>
-                <span class="ml-2">nebula deploy</span>
+                <span class="ml-2">main.py</span>
               </div>
-              <pre class="overflow-x-auto p-4 text-[12px] leading-relaxed text-white/80"><code>$ npx nebula init
-$ nebula auth login
-$ nebula model deploy --name qmesh-llm --gpu a100x8 --replicas 6 --region global
-✔ Deployment ready at https://api.nebula.dev/v1/models/qmesh-llm:predict
-              </code></pre>
+              <pre class="overflow-x-auto p-4 text-[12px] leading-relaxed text-white/80"><code>from openai import OpenAI
+
+client = OpenAI(
+    api_key="your-api-key",
+    base_url="https://www.marsxplus.com/v1"
+)
+
+response = client.chat.completions.create(
+    model="deepseek-chat",
+    messages=[{"role": "user", "content": "Hello!"}]
+)</code></pre>
             </div>
           </div>
 
@@ -80,7 +88,7 @@ $ nebula model deploy --name qmesh-llm --gpu a100x8 --replicas 6 --region global
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-2 text-sm text-white/80">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-[16px] w-[16px] text-violet-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M16 18v-8a2 2 0 0 0-2-2H6"></path><rect width="16" height="20" x="4" y="2" rx="2"></rect></svg>
-                REST example
+                cURL 请求示例
               </div>
               <span class="text-xs text-white/50">cURL</span>
             </div>
@@ -89,13 +97,15 @@ $ nebula model deploy --name qmesh-llm --gpu a100x8 --replicas 6 --region global
                 <span class="h-2 w-2 rounded-full bg-rose-400/90"></span>
                 <span class="h-2 w-2 rounded-full bg-amber-400/90"></span>
                 <span class="h-2 w-2 rounded-full bg-emerald-400/90"></span>
-                <span class="ml-2">predict</span>
+                <span class="ml-2">terminal</span>
               </div>
-              <pre class="overflow-x-auto p-4 text-[12px] leading-relaxed text-white/80"><code>curl https://api.nebula.dev/v1/models/qmesh-llm:predict \
--H "Authorization: Bearer $NEBULA_API_KEY" \
+              <pre class="overflow-x-auto p-4 text-[12px] leading-relaxed text-white/80"><code>curl https://www.marsxplus.com/v1/chat/completions \
+-H "Authorization: Bearer your-api-key" \
 -H "Content-Type: application/json" \
--d '{"input": "Write a haiku about distributed systems."}'
-              </code></pre>
+-d '{
+  "model": "claude-3-5-sonnet-latest",
+  "messages": [{"role": "user", "content": "Hello!"}]
+}'</code></pre>
             </div>
           </div>
         </div>
@@ -172,30 +182,38 @@ $ nebula model deploy --name qmesh-llm --gpu a100x8 --replicas 6 --region global
     <!-- Features -->
     <section class="bg-black py-20">
       <div class="mx-auto max-w-6xl px-6">
-        <h2 class="text-center text-2xl tracking-tight sm:text-3xl">Why Nebula?</h2>
-        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
-            <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"></path></svg>
-            </div>
-            <h3 class="mt-4 text-lg font-medium">High‑Performance Compute</h3>
-            <p class="mt-2 text-sm text-white/70">Distributed GPU clusters with sub‑millisecond interconnects for both inference and training.</p>
-          </div>
-
+        <h2 class="text-center text-2xl tracking-tight sm:text-3xl">为什么选择我们?</h2>
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div class="rounded-xl border border-white/10 bg-white/5 p-6">
             <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M3 11V7a4 4 0 0 1 8 0v4"></path><rect width="18" height="12" x="3" y="11" rx="2"></rect></svg>
             </div>
-            <h3 class="mt-4 text-lg font-medium">Zero‑Trust Security</h3>
-            <p class="mt-2 text-sm text-white/70">End‑to‑end encryption, identity‑bound policies, and per‑request isolation at every hop.</p>
+            <h3 class="mt-4 text-lg font-medium">隐私至上</h3>
+            <p class="mt-2 text-sm text-white/70">我们不收集用户的任何数据，使用开源协议</p>
           </div>
 
           <div class="rounded-xl border border-white/10 bg-white/5 p-6">
             <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
             </div>
-            <h3 class="mt-4 text-lg font-medium">Global Edge Network</h3>
-            <p class="mt-2 text-sm text-white/70">Place models near users across 200+ PoPs for instant, reliable responses.</p>
+            <h3 class="mt-4 text-lg font-medium">价格实惠</h3>
+            <p class="mt-2 text-sm text-white/70">低价享受高性能 AI 服务</p>
+          </div>
+
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"></path></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-medium">快速集成</h3>
+            <p class="mt-2 text-sm text-white/70">API 文档清晰，接入方便</p>
+          </div>
+
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="flex h-12 w-12 items-center justify-center rounded-full border border-white/20">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-[20px] w-[20px]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+            </div>
+            <h3 class="mt-4 text-lg font-medium">响应迅速</h3>
+            <p class="mt-2 text-sm text-white/70">服务器稳定，快速响应请求</p>
           </div>
         </div>
       </div>
